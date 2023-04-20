@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabla de productos</title>
+    <link rel="stylesheet" href="/css/estilo1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body class="fondo"> 
+ 
+    <div class="wrapper">
+      <h1>Registro</h1>
+      <table id="tabla1">
+        <thead>
+          <tr>
+            <th>cedula</th>
+            <th>nombre</th>
+            <th>apallido</th>
+            <th>curso</th>
+            <th>nota_final</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--Aquí irán los datos de la tabla-->
+        </tbody>
+      </table>
+      <button type="button" id="lista" class="btn">Mostrar todo</button>
+      <button type="button" id="notam" class="btn">Mostrar nota mayor</button>
+      <input type="text" id="datos">  
+      <button type="button" id="eliminar" class="btn">eliminar estudante con menor nota</button>
+    </div>  
+    
+    <script src="./listar.js"></script>
+    <script src="./notam.js"></script>
+    <script src="./eliminar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+.fondo{
+  background-image: url(/asset/0qje4b3ia8o31.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+button {
+    position: relative;
+    overflow: hidden;
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    padding: 10px 0;
+    border-radius: 20px;
+    outline: none;
+    width: 90%;
+    color: #fff;
+    cursor: pointer;
+    background: rgb(15, 174, 223);
+    font-size: 25px;
+  }
+  
+  /*animacion del boton*/
+  
+  button::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 7px;
+    background: linear-gradient(to right, #32d1d1b7, #00ffffbb, #b50be0af, #440be0a8 );
+    animation: line-animation 2s linear infinite;
+  }
+  
+  @keyframes line-animation {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+    
+  }
+
+
+  
+  .wrapper{
+    width: 400px;
+    padding: 2rem;
+    margin: 150px auto;
+    background: #704b9e;
+    border-radius: 20px;
+    text-align: center;
+    opacity: 0.8;
+  }
+  
+
+h1{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1.2rem;
+}
+
+
+#tabla1 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tabla1 th,
+#tabla1 td {
+  border: 1px solid rgb(246, 234, 234);
+  padding: 8px;
+  text-align: left;
+  color: white;
+  background-color: #a628e0;
+}
+
+#tabla1 th {
+  background-color: #a628e0;
+  font-weight: bold;
+}
+
